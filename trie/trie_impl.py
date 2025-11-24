@@ -14,6 +14,8 @@ class TrieNode:
 class Trie:
     def __init__(self) -> None:
         self.root = TrieNode()
+        # key = node instance id
+        # val = dict[character -> tree node]
         self.instance_to_children_map: defaultdict[int, dict[str, TrieNode]] = defaultdict(dict)
 
 
